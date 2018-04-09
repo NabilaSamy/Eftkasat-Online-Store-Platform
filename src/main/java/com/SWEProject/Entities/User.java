@@ -24,7 +24,7 @@ public class User {
 	
 	public User() {
 		super();
-		//id = 0;
+		id = 0;
 		userID = "";
 		uname = "";
 		uphone = "";
@@ -38,7 +38,7 @@ public class User {
 	public User(Integer id, String userID, String uname, String uphone, String uaddress, String uage, String ugender,
 			String umail, String upass) {
 		super();
-		//this.id = id;
+		this.id = id;
 		this.userID = userID;
 		this.uname = uname;
 		this.uphone = uphone;
@@ -48,14 +48,14 @@ public class User {
 		this.umail = umail;
 		this.upass = upass;
 	}
-	/*
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}
 	public Integer getId() {
 		return id;
 	}
-	*/
+	
 	
 	public void setUserID(String userID) {
 		this.userID = userID;

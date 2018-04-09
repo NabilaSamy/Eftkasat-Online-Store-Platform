@@ -5,7 +5,8 @@
 <title>Add New User</title>
 </head>
 <body>
-<form method="post" th:action="@{/addUser}" th:object="${user}">
+<form method="post" th:action="@{/addUser}" th:object="${user}" 
+			action="addUser.html">
 	User Name: <input type="text" th:field="*{uname}" />
 	<br><br>
 	User Phone: <input type="text" th:field="*{uphone}" />
