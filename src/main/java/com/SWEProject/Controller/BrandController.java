@@ -29,6 +29,5 @@ public class BrandController {
 		repo.save(brand);
 		model.addAttribute("brand", new Brand());
 		return "addBrand";
-		
 	}
 }

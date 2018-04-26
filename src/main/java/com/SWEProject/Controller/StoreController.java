@@ -17,13 +17,13 @@ public class StoreController {
 	private StoreRepository repo;
 	
 	@GetMapping("/addStore")
-	public String showUsersForm(Model model) {
+	public String showStoresForm(Model model) {
 		model.addAttribute("store", new Store());
 		return "addStore";
 	}
 	
 	@PostMapping("/addStore")
-	public String addUser(Model model, @ModelAttribute Store store) {
+	public String addStore(Model model, @ModelAttribute Store store) {
 		System.out.println(store.getStoreName());
 		System.out.println(store.getStoreAddress());
 		System.out.println(store.getStoreType());
@@ -31,5 +31,5 @@ public class StoreController {
 		repo.save(store);
 		model.addAttribute("store", new Store());
 		return "addStore";
-		}
+	}
 }

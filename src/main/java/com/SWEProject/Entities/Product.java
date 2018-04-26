@@ -13,7 +13,7 @@ public class Product {
     private Integer id;
 	
 	private String ProdName;
-	private String ProdPrice;
+	private int ProdPrice;
 	private String ProdCategory;
 	private String ProdType;
 	private String BrandName;
@@ -23,15 +23,15 @@ public class Product {
 		super();
 		id = 0;
 		ProdName = "";
-		ProdPrice = "";
+		ProdPrice = 0;
 		ProdCategory = "";
 		ProdType = "";
 		BrandName = "";
 		StoreName = "";
 	}
 	
-	public Product(Integer id, String prodName, String prodPrice, String prodCategory, String prodType, 
-			String brandName, String storeName) {
+	public Product(Integer id, String prodName, int prodPrice, String prodCategory, 
+			String prodType, String brandName, String storeName) {
 		super();
 		this.id = id;
 		this.ProdName = prodName;
@@ -57,10 +57,10 @@ public class Product {
 		return ProdName;
 	}
 
-	public void setProdPrice(String prodPrice) {
+	public void setProdPrice(int prodPrice) {
 		ProdPrice = prodPrice;
 	}
-	public String getProdPrice() {
+	public int getProdPrice() {
 		return ProdPrice;
 	}
 

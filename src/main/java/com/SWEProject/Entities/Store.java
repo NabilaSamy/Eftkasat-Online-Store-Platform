@@ -12,6 +12,7 @@ public class Store {
 	@GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
 	
+	private String StoreOwner;
 	private String StoreName;
 	private String StoreAddress;
 	private String StoreType;
@@ -69,6 +70,14 @@ public class Store {
 	}
 	public String getStoreInformation() {
 		return StoreInformation;
+	}
+
+	public String getStoreOwner() {
+		return StoreOwner;
+	}
+
+	public void setStoreOwner(String storeOwner) {
+		StoreOwner = storeOwner;
 	}
 
 }

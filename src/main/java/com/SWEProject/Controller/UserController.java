@@ -39,5 +39,18 @@ public class UserController {
 		repo.save(user);
 		model.addAttribute("user", new User());
 		return "addUser";
-		}
+	}
+	
+	@PostMapping("/changeRequest")
+	public String changeRequest(Model model , @ModelAttribute User user) {
+		System.out.println(user.getUname());
+		System.out.println(user.getUaddress());
+		System.out.println(user.getUgender());
+		System.out.println(user.getUphone());
+		System.out.println(user.getUage());
+		System.out.println(user.getUmail());
+		repo.save(user);
+		model.addAttribute("user", new User());
+		return "addUSer";
+	}
 }

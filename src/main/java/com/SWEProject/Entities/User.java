@@ -14,9 +14,9 @@ public class User {
 	
 	private String userID;
 	private String uname;
-	private String uphone;
+	private int uphone;
 	private String uaddress;
-	private String uage;
+	private int uage;
 	private String ugender;
 	private String umail;
 	private String upass;
@@ -27,15 +27,15 @@ public class User {
 		id = 0;
 		userID = "";
 		uname = "";
-		uphone = "";
+		uphone = 0;
 		uaddress = "";
-		uage = "";
+		uage = 0;
 		ugender = "";
 		umail = "";
 		upass = "";
 	}
 
-	public User(Integer id, String userID, String uname, String uphone, String uaddress, String uage, String ugender,
+	public User(Integer id, String userID, String uname, int uphone, String uaddress, int uage, String ugender,
 			String umail, String upass) {
 		super();
 		this.id = id;
@@ -56,10 +56,10 @@ public class User {
 		return id;
 	}
 	
-	
 	public void setUserID(String userID) {
 		this.userID = userID;
 	}
+	
 	public String getUserID() {
 		return userID;
 	}
@@ -71,10 +71,10 @@ public class User {
 		return uname;
 	}
 	
-	public void setUphone(String uphone) {
+	public void setUphone(int uphone) {
 		this.uphone = uphone;
 	}
-	public String getUphone() {
+	public int getUphone() {
 		return uphone;
 	}
 	
@@ -85,10 +85,10 @@ public class User {
 		return uaddress;
 	}
 	
-	public void setUage(String uage) {
+	public void setUage(int uage) {
 		this.uage = uage;
 	}
-	public String getUage() {
+	public int getUage() {
 		return uage;
 	}
 	
