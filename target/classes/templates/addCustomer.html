@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Add New Customer</title>
+</head>
+<body>
+<form method="post" th:action="@{/addCustomer}" th:object="${customer}" 
+	action="addCustomer">
+	<h1>Add New Customer</h1><br>
+	Customer Name: <input type="text" th:field="*{cname}" /><br><br>
+	Customer Phone: <input type="number" th:field="*{cphone}" /><br><br>
+	Customer Address: <input type="text" th:field="*{caddress}" /><br><br>
+	Customer Age: <input type="number" th:field="*{cage}" /><br><br>
+	Customer Gender: <input type="text" th:field="*{cgender}" /><br><br>
+	Customer E-mail: <input type="text" th:field="*{cmail}" />	<br><br>
+	Customer Password: <input type="password" th:field="*{cpass}" /><br><br>
+	<input type="submit" value="Add Customer" />
+</form>
+
+<form action="index">
+<h3>If you want to Logout, Click
+<button type="submit" value="Logout"> Logout </button></h3>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Add New Payment Page</title>
+</head>
+<body>
+<h1><font size="300">Add Payment Page</font></h1><br></br>
+
+<form method="post" th:action="@{/addPayment}" th:object="${payment}" 
+	action="addPayment">
+	<h1>Add New Payment</h1><br>
+	Customer Name: <input type="text" th:field="*{cname}" /><br><br>
+	Customer E-mail: <input type="text" th:field="*{cmail}" /><br><br>
+	Product Name: <input type="text" th:field="*{ProdName}" /><br><br>
+	Brand Name: <input type="text" th:field="*{BrandName}" /><br><br>
+	Payment Type: <input type="text" th:field="*{PaymentType}" /><br><br>
+	<input type="submit" value="Add Payment" />
+</form>
+
+
+<form action="ViewPayment">
+<h3>If you want to view payment, Click
+<button type="submit" value="View PAyment"> View Payment </button></h3>
+</form>
+
+<form action="index">
+<h3>If you want to Logout, Click
+<button type="submit" value="Logout"> Logout </button></h3>
+</form>
+
+</body>
+</html>

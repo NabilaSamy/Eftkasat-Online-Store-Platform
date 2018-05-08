@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Add New Administrator</title>
+</head>
+<body>
+<form method="post" th:action="@{/addAdministrator}" th:object="${administrator}" 
+	action="addAdministrator">
+	<h1>Add New Administrator</h1><br>
+	Administrator Name: <input type="text" th:field="*{adminName}" /><br><br>
+	Administrator Phone: <input type="number" th:field="*{adminPhone}" /><br><br>
+	Administrator Address: <input type="text" th:field="*{adminAddress}" /><br><br>
+	Administrator Age: <input type="number" th:field="*{adminAge}" /><br><br>
+	Administrator Gender: <input type="text" th:field="*{adminGender}" /><br><br>
+	Administrator E-mail: <input type="text" th:field="*{adminMail}" /><br><br>
+	Administrator Password: <input type="password" th:field="*{adminPass}" /><br><br>
+	<input type="submit" value="Add Administrator" />
+</form>
+
+<form action="index">
+<h3>If you want to Logout, Click
+<button type="submit" value="Logout"> Logout </button></h3>
+</form>
+
+</body>
+</html>

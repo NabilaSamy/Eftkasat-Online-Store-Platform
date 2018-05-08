@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Add New Store_Owner</title>
+</head>
+<body>
+<form method="post" th:action="@{/addStoreowner}" th:object="${sowner}" 
+	action="addStoreowner">
+	<h1>Add New Store_Owner</h1><br>
+	Store_Owner Name: <input type="text" th:field="*{sownerName}" /><br><br>
+	Store_Owner Phone: <input type="number" th:field="*{sownerPhone}" /><br><br>
+	Store_Owner Address: <input type="text" th:field="*{sownerAddress}" /><br><br>
+	Store_Owner Age: <input type="number" th:field="*{sownerAge}" /><br><br>
+	Store_Owner Gender: <input type="text" th:field="*{sownerGender}" /><br><br>
+	Store_Owner E-mail: <input type="text" th:field="*{sownerMail}" /><br><br>
+	Store_Owner Password: <input type="password" th:field="*{sownerPass}" /><br><br>
+	<input type="submit" value="Add Store Owner" />
+</form>
+
+<form action="index">
+<h3>If you want to Logout, Click
+<button type="submit" value="Logout"> Logout </button></h3>
+</form>
+
+</body>
+</html>

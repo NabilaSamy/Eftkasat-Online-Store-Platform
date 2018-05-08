@@ -5,20 +5,21 @@
 <title>Add New Product</title>
 </head>
 <body>
+<h1><font size="300">Add Product Page</font></h1><br></br>
 <form method="post" th:action="@{/addProduct}" th:object="${product}">
-	Product Name: <input type="text" th:field="*{ProdName}" />
-	<br><br>
-	Product Price: <input type="text" th:field="*{ProdPrice}" />
-	<br><br>
-	Product Category: <input type="text" th:field="*{ProdCategory}" />
-	<br><br>
-	Product Type: <input type="text" th:field="*{ProdType}" />
-	<br><br>
-	Brand Name: <input type="text" th:field="*{BrandName}" />
-	<br><br>
-	Store Name: <input type="text" th:field="*{StoreName}" />
-	<br><br>
-	Submit <input type="submit" value="Submit" />
+	Product Name: <input type="text" th:field="*{ProdName}" /><br><br>
+	Product Price: <input type="text" th:field="*{ProdPrice}" /><br><br>
+	Product Category: <input type="text" th:field="*{ProdCategory}" /><br><br>
+	Product Type: <input type="text" th:field="*{ProdType}" /><br><br>
+	Brand Name: <input type="text" th:field="*{BrandName}" /><br><br>
+	Store Name: <input type="text" th:field="*{StoreName}" /><br><br>
+	<input type="submit" value="Add Product" />
 </form>
+
+<form action="index">
+<h3>If you want to Logout, Click
+<button type="submit" value="Logout"> Logout </button></h3>
+</form>
+
 </body>
 </html>

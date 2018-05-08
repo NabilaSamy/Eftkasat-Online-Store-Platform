@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Add New Statistics Page</title>
+</head>
+<body>
+<h1><font size="300">Add New Statistics Page</font></h1><br></br>
+
+<form method="post" th:action="@{/mostBrand}" th:object="${mostBrand}" 
+	action="mostBrand">
+	If you want to get the most selling brands:
+	Brand Name: <input type="text" th:field="*{BrandName}" /><br><br>
+	<input type="submit" value="Add Statistics" />
+</form>
+
+<form action="index">
+<h3>If you want to Logout, Click
+<button type="submit" value="Logout"> Logout </button></h3>
+</form>
+
+</body>
+</html>

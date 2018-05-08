@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>View Statistics Page</title>
+</head>
+<body>
+<h1><font size="300">View Statistics Page</font></h1><br></br>
+
+<table border="1">
+	<tr>
+		<td>brand_name</td>
+		</tr>
+		<tr th:each = "mostBrand : ${mostBrands}">
+			<td th:text = "${mostBrand.BrandName}"></td>
+		</tr>
+</table>
+
+<form action="index">
+<h3>If you want to Logout, Click
+<button type="submit" value="Logout"> Logout </button></h3>
+</form>
+
+
+</body>
+</html>

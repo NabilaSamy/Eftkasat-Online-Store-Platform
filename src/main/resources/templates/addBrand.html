@@ -5,12 +5,18 @@
 <title>Add New Brand</title>
 </head>
 <body>
+<h1><font size="300">Add Brand Page</font></h1>
+<br></br>
 <form method="post" th:action="@{/addBrand}" th:object="${brand}">
-	Brand Name: <input type="text" th:field="*{BrandName}" />
-	<br><br>
-	Brand Type: <input type="text" th:field="*{BrandType}" />
-	<br><br>
-	Submit <input type="submit" value="Submit" />
+	Brand Name: <input type="text" th:field="*{BrandName}" /><br><br>
+	Brand Type: <input type="text" th:field="*{BrandType}" /><br><br>
+	<input type="submit" value="Add Brand" />
 </form>
+
+<form action="index">
+<h3>If you want to Logout, Click
+<button type="submit" value="Logout"> Logout </button></h3>
+</form>
+
 </body>
 </html>
